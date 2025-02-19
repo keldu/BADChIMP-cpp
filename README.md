@@ -15,10 +15,10 @@ This script will make a ```build``` folder, run ```cmake``` from that folder and
 Run `podman build -v /etc/ssl/certs:/etc/ssl/certs .`  
 
 The `-v` option only is relevant if you have a tls mitm setup. Otherwise I encourage removing the set env variables
-from the Dockerfile.  
+from the Dockerfile and not using the `-v` option.  
 Did not manage to think of a cleaner way to set it up.
 
-Use the resulting image to run the image
+Use the resulting image and its id to run a container  
 
 `podman run -v /etc/ssl/certs:/etc/ssl/certs ${imageid}`  
 
