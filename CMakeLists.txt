@@ -48,6 +48,19 @@ IF(MPI_CXX_FOUND)
         LIST(APPEND SCR_EXTERNAL_LIBS ${MPI_CXX_LIBRARIES})
 ENDIF(MPI_CXX_FOUND)
 
+# Try to find Eigen3
+find_package(Eigen3)
+if(NOT EIGEN3_FOUND)
+	message(CHECK_START "Fetching external Eigen3")
+	include(FetchContent)
+	FetchContent_Declare(
+		eigen3
+		URL https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz
+		URL_HASH SHA256=8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72
+	)
+	FetchContent_MakeAvailable(eigen3)
+	message(CHECK_PASS "Done")
+endif()
 
 #if ( CMAKE_COMPILER_IS_GNUCC )
     # This is (not) tested
