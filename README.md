@@ -20,7 +20,7 @@ Did not manage to think of a cleaner way to set it up.
 
 Use the resulting image and its id to run a container  
 
-`podman run -v /etc/ssl/certs:/etc/ssl/certs ${imageid}`  
+`podman run -it -v /etc/ssl/certs:/etc/ssl/certs ${imageid}`  
 
 This drops you into /data with the basic setup being provided to you. The env is designed to be as minimal as possible from the POV of docker/podman.  
 Additional dependencies can be pulled with `nix-shell -p vim htop` (Alternatively add more software). This drops you into a new shell which you can exit via `ctrl+d` or `exit`. But everything regarding just running the software should be available.  
