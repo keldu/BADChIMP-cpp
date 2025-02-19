@@ -23,8 +23,8 @@
 #include "LBsubgridboundaryd.h"
 
 //  Linear algebra package
-#include "../Eigen/Dense"
-#include "../Eigen/SVD"
+#include <Eigen/Dense>
+#include <Eigen/SVD>
 
 using namespace Eigen;
 

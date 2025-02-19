@@ -9,8 +9,8 @@
 #include "../lbsolver/LBfield.h"
 
 //  Linear  package
-#include "../Eigen/Dense"
-#include "../Eigen/SVD"
+#include <Eigen/Dense>
+#include <Eigen/SVD>
 
 using namespace Eigen;
 
