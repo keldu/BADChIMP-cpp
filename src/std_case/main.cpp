@@ -29,7 +29,7 @@ int main()
     // SETUP THE INPUT AND OUTPUT PATHS
     // ********************************
     //std::string chimpDir = "/home/AD.NORCERESEARCH.NO/esje/Programs/GitHub/BADCHiMP/";
-    std::string chimpDir = "./../";
+    std::string chimpDir = "./";
     //std::string chimpDir = "/Users/janlv/github/BADCHiMP-cpp/";
     std::string mpiDir = chimpDir + "input/mpi/";
     std::string inputDir = chimpDir + "input/";

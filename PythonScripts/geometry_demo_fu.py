@@ -23,7 +23,8 @@ geo[:,0] = 0
 # geo[30:, 21:] = 0
 
 # path to your badchimp folder
-path_badchimp = "/home/AD.NORCERESEARCH.NO/esje/Programs/GitHub/BADCHiMP/"
+path_badchimp = "./"
+# path_badchimp = "/home/AD.NORCERESEARCH.NO/esje/Programs/GitHub/BADCHiMP/"
 # generate geometry input file(s)
 vtk = vtklb(geo, "D2Q9", "xy", "tmp", path_badchimp + "input/mpi/") 
 
