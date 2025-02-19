@@ -1,8 +1,8 @@
 #ifndef LBBOUNDARYINTERPOLATION_H
 #define LBBOUNDARYINTERPOLATION_H
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 #include "LBrans.h"
 // #include <chrono>
 #include <numeric>

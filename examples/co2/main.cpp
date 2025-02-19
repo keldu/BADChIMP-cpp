@@ -7,8 +7,8 @@
 // 
 // //////////////////////////////////////////////
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 #include "./LBco2help.h"
 
 // SET THE LATTICE TYPE

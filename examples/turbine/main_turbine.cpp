@@ -25,33 +25,33 @@
 #include <ctime>
 #include <algorithm>
 
-#include "../lbsolver/LBbndmpi.h"
-//#include "../lbsolver/LBboundary.h"
-#include "../lbsolver/LBcollision.h"
-//#include "../lbsolver/LBcollision2phase.h"
-#include "../lbsolver/LBlatticetypes.h"
-#include "../lbsolver/LBfield.h"
-#include "../lbsolver/LBgeometry.h"
-#include "../lbsolver/LBgrid.h"
-//#include "../lbsolver/LBhalfwaybb.h"
-//#include "../lbsolver/LBfreeSlipCartesian.h"
-//#include "../lbsolver/LBfreeFlowCartesian.h"
-#include "../lbsolver/LBinitiatefield.h"
-#include "../lbsolver/LBmacroscopic.h"
-#include "../lbsolver/LBnodes.h"
-#include "../lbsolver/LBsnippets.h"
-#include "../lbsolver/LButilities.h"
-//#include "../lbsolver/LBpressurebnd.h"
+#include <lbsolver/LBbndmpi.h>
+//#include <lbsolver/LBboundary.h>
+#include <lbsolver/LBcollision.h>
+//#include <lbsolver/LBcollision2phase.h>
+#include <lbsolver/LBlatticetypes.h>
+#include <lbsolver/LBfield.h>
+#include <lbsolver/LBgeometry.h>
+#include <lbsolver/LBgrid.h>
+//#include <lbsolver/LBhalfwaybb.h>
+//#include <lbsolver/LBfreeSlipCartesian.h>
+//#include <lbsolver/LBfreeFlowCartesian.h>
+#include <lbsolver/LBinitiatefield.h>
+#include <lbsolver/LBmacroscopic.h>
+#include <lbsolver/LBnodes.h>
+#include <lbsolver/LBsnippets.h>
+#include <lbsolver/LButilities.h>
+//#include <lbsolver/LBpressurebnd.h>
 
-#include "../io/Input.h"
-#include "../io/Output.h"
+#include <io/Input.h>
+#include <io/Output.h>
 
-#include "../lbsolver/LBvtk.h"
+#include <lbsolver/LBvtk.h>
 
-//#include "../src/LBbounceback.h"
-//#include "../src/LBfreeslipsolid.h"
+//#include <src/LBbounceback.h>
+//#include <src/LBfreeslipsolid.h>
 
-//#include "../src/LBinletoutlet.h"
+//#include <src/LBinletoutlet.h>
 
 #include "LBturbineforce.h"
 #include "LBturbineboundary.h"

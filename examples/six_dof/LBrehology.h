@@ -6,7 +6,7 @@
 #include <fstream>
 #include <algorithm>
 #include <cmath>
-#include "../lbsolver/LBglobal.h"
+#include <lbsolver/LBglobal.h>
 
 //=====================================================================================
 //

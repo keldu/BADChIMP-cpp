@@ -1,12 +1,12 @@
 #ifndef LBSIXDOF_H
 #define LBSIXDOF_H
 
-#include "../lbsolver/LBglobal.h"
-#include "../lbsolver/LBlatticetypes.h"
-#include "../lbsolver/LBfield.h"
-#include "../lbsolver/LBvtk.h"
-#include "../lbsolver/LBnodes.h"
-#include "../lbsolver/LBboundary.h"
+#include <lbsolver/LBglobal.h>
+#include <lbsolver/LBlatticetypes.h>
+#include <lbsolver/LBfield.h>
+#include <lbsolver/LBvtk.h>
+#include <lbsolver/LBnodes.h>
+#include <lbsolver/LBboundary.h>
 
 #include <array>
 

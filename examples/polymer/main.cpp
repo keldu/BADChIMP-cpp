@@ -16,8 +16,8 @@
 #include <ctime>
 #include <algorithm>
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 
 #include "LBsubgridboundary.h"
 #include "LBsubgridboundaryd.h"

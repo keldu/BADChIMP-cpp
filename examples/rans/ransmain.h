@@ -1,8 +1,8 @@
 #ifndef RANS_MAIN_H
 #define RANS_MAIN_H
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 #include "LBrans.h"
 #include <chrono>
 #include <numeric>

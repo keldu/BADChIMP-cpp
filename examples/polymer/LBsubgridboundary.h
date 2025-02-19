@@ -3,10 +3,10 @@
 
 #include <math.h>
 
-#include "../lbsolver/LBglobal.h"
-#include "../lbsolver/LBboundary.h"
-#include "../lbsolver/LBgrid.h"
-#include "../lbsolver/LBfield.h"
+#include <lbsolver/LBglobal.h>
+#include <lbsolver/LBboundary.h>
+#include <lbsolver/LBgrid.h>
+#include <lbsolver/LBfield.h>
 
 //  Linear  package
 #include <Eigen/Dense>

@@ -5,8 +5,8 @@
 //
 //=====================================================================================
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 #include "LBsixdof.h"
 #include "LBrehology.h"
 // SET THE LATTICE TYPE

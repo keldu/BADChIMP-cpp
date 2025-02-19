@@ -1,11 +1,11 @@
 #ifndef LBTURBINEBOUNDARY
 #define LBTURBINEBOUNDARY
 
-#include "../lbsolver/LBglobal.h"
-#include "../lbsolver/LBboundary.h"
-#include "../lbsolver/LBgrid.h"
-#include "../lbsolver/LBnodes.h"
-#include "../lbsolver/LBfield.h"
+#include <lbsolver/LBglobal.h>
+#include <lbsolver/LBboundary.h>
+#include <lbsolver/LBgrid.h>
+#include <lbsolver/LBnodes.h>
+#include <lbsolver/LBfield.h>
 #include "LBturbineforce.h"
 
 

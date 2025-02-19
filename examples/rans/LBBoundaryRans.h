@@ -1,8 +1,8 @@
 #ifndef LBBOUNDARYRANS
 #define LBBOUNDARYRANS
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 #include "LBBoundaryInterpolation.h"
 #include <numeric>
 

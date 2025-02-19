@@ -7,8 +7,8 @@
 // 
 // //////////////////////////////////////////////
 
-#include "../LBSOLVER.h"
-#include "../IO.h"
+#include <LBSOLVER.h>
+#include <IO.h>
 #include "./LBpartial_mixHelp.h"
 
 #include <omp.h>

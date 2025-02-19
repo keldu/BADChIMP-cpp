@@ -5,8 +5,8 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
-#include "../lbsolver/LBglobal.h"
-#include "../io/Input.h"
+#include <lbsolver/LBglobal.h>
+#include <io/Input.h>
 #include "LBBoundaryInterpolation.h"
 #include "LBBoundaryRans.h"
 

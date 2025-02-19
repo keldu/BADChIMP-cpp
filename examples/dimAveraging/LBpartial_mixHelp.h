@@ -2,11 +2,11 @@
 #define LBCO2HELP_H
 
 #include <string>
-#include "../lbsolver/LBglobal.h"
-#include "../lbsolver/LBlatticetypes.h"
-#include "../lbsolver/LBfield.h"
-#include "../lbsolver/LBvtk.h"
-#include "../lbsolver/LBnodes.h"
+#include <lbsolver/LBglobal.h>
+#include <lbsolver/LBlatticetypes.h>
+#include <lbsolver/LBfield.h>
+#include <lbsolver/LBvtk.h>
+#include <lbsolver/LBnodes.h>
 
 
 
