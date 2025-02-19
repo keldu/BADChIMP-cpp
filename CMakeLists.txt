@@ -3,7 +3,7 @@ cmake_minimum_required (VERSION 2.9)
 # Maps to Visual Studio solution file (Tutorial.sln)
 # The solution will have all targets (exe, lib, dll) 
 # as Visual Studio projects (.vcproj)
-PROJECT(BADChIMP)
+PROJECT(BADChIMP LANGUAGES CXX)
 
 SET(CXX_STD 17) 
 
@@ -42,12 +42,11 @@ if("${CMAKE_SIZEOF_VOID_P}" EQUAL 8)
       endif()
 ENDIF(WIN32)
 
-find_package(MPI)
+find_package(MPI REQUIRED)
 IF(MPI_CXX_FOUND)
         INCLUDE_DIRECTORIES(${MPI_CXX_INCLUDE_PATH})
         LIST(APPEND SCR_EXTERNAL_LIBS ${MPI_CXX_LIBRARIES})
 ENDIF(MPI_CXX_FOUND)
-
 
 
 #if ( CMAKE_COMPILER_IS_GNUCC )
@@ -76,6 +75,8 @@ ELSEIF(UNIX AND NOT APPLE)
 ELSE()
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++${CXX_STD} -Wall")
 ENDIF(WIN32)
+
+
 
 # Command to output information to the console
 # Useful for displaying errors, warnings, and debugging
