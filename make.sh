@@ -18,6 +18,7 @@ if [ ! -d $dest ]; then
   mkdir $dest
 fi
 
+# why would you system this ?
 system cd $dest
 system cmake -DLBMAIN:STRING="$@" ../
 system make

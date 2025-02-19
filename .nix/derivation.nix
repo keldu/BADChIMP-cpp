@@ -2,6 +2,7 @@
 , stdenv
 , cmake
 , openmpi
+, eigen
 , python3
 , python3Packages
 }:
@@ -18,20 +19,16 @@ stdenv.mkDerivation {
 
   buildInputs = [
     openmpi
+    eigen
     python3
     python3Packages.numpy
     python3Packages.matplotlib
   ];
   
   cmakeFlags = [
-    "DLBMAIN:STRING=./input"
   ];
 
-  installPhase = ''
-    mkdir -p $out
-    mkdir -p $out/bin
-    mkdir -p $out/python
-    cp bin/bdchmp $out/bin
-    cp $src/PythonScripts/*.py $out/python
+  postInstall = ''
+    patchShebangs $out/python/
   '';
 }

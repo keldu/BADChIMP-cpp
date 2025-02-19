@@ -1,12 +1,12 @@
-cmake_minimum_required (VERSION 2.9)
+cmake_minimum_required (VERSION 3.5)
 
 # Maps to Visual Studio solution file (Tutorial.sln)
 # The solution will have all targets (exe, lib, dll) 
 # as Visual Studio projects (.vcproj)
 PROJECT(BADChIMP LANGUAGES CXX)
-
 SET(CXX_STD 17) 
 
+set(LB_MAIN "" CACHE STRING "Choose the example to be built, if any")
 #SET(LBMAIN rans)
 #SET(LBMAIN std_one_phase)
 #SET(LBMAIN laplace_fluid)
@@ -97,30 +97,8 @@ ENDIF(WIN32)
 message ("cxx Flags: " ${CMAKE_CXX_FLAGS})
 
 # Sub-directories where more CMakeLists.txt exist
-ADD_SUBDIRECTORY( src/lbsolver/ )
-ADD_SUBDIRECTORY( src/io/       )
-
-
-if(EXISTS "${PROJECT_SOURCE_DIR}/src/${LBMAIN}")
- string(COMPARE EQUAL "${LBMAIN}" "" result)
- if(result)
-  message("CMAKE: NO ARGUMENTS GIVEN")
-  message("CMAKE: ADDING MAIN FILE STD_CASE")
-  ADD_SUBDIRECTORY( ${PROJECT_SOURCE_DIR}/src/std_case/  )
- else()
-  message("CMAKE: ADDING MAIN FILE ${LBMAIN}")
-  ADD_SUBDIRECTORY(${PROJECT_SOURCE_DIR}/src/${LBMAIN}  )
- endif()
-else()
- message("CMAKE: COULD NOT FIND FOLDER: ${LBMAIN}")
- message("CMAKE: ADDING MAIN FILE STD_CASE")
- ADD_SUBDIRECTORY( ${PROJECT_SOURCE_DIR}/src/std_case/  )
-endif()
-
+add_subdirectory(src)
+add_subdirectory(examples)
+add_subdirectory(PythonScripts)
 
 message("BUILD:" ${CMAKE_BUILD_TYPE})
-
-
-
-
-

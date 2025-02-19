@@ -38,7 +38,10 @@ SET ( HEADERS
     defines.h
     )
 
-ADD_LIBRARY ( lbsolver  ${SRC} ${HEADERS} )
-
-
-
+add_library ( lbsolver  ${SRC} ${HEADERS} )
+set_target_properties( lbsolver
+	PROPERTIES
+		CXX_STANDARD 17
+		PUBLIC_HEADER "${HEADERS}"
+		EXPORT_NAME lbsolver
+)
