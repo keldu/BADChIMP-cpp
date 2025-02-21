@@ -28,6 +28,8 @@ stdenv.mkDerivation {
   cmakeFlags = [
   ];
 
+  doCheck = true;
+
   postInstall = ''
     patchShebangs $out/python/
   '';

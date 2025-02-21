@@ -62,6 +62,22 @@ if(NOT EIGEN3_FOUND)
 	message(CHECK_PASS "Done")
 endif()
 
+if(BUILD_TESTS)
+	# Try to find gtest
+	find_package(GTest 1.12)
+	if(NOT GTest_FOUND)
+		message(CHECK_START "Fetching external GTest")
+		include(FetchContent)
+		FetchContent_Declare(
+			googletest
+			URL https://github.com/google/googletest/archive/refs/tags/release-1.12.1.tar.gz
+			URL_HASH MD5=e8219374acdfda3f425331028eb4e2a
+		)
+		FetchContent_MakeAvailable(googletest)
+		message(CHECK_PASS "Done")
+	endif()
+endif()
+
 #if ( CMAKE_COMPILER_IS_GNUCC )
     # This is (not) tested
     # set_property( TARGET LBSOLVER APPEND_STRING PROPERTY COMPILE_FLAGS
@@ -80,7 +96,7 @@ ELSEIF(UNIX AND NOT APPLE)
   IF(CMAKE_BUILD_TYPE MATCHES Debug)
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -pg -std=c++${CXX_STD} -Wall")
   ELSE()
-    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp -O3 -std=c++${CXX_STD} -Wall")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -std=c++${CXX_STD} -Wall")
   ENDIF(CMAKE_BUILD_TYPE MATCHES Debug)
   #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -pg -std=c++11")
   #SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -O3 -std=c++${CXX_STD}")

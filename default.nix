@@ -1,5 +1,5 @@
 { pkgs ? import <nixpkgs> {}
-, stdenv ? pkgs.gccStdenv
+, stdenv ? pkgs.clangStdenv
 }:
 
 

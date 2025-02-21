@@ -11,6 +11,7 @@ target_include_directories(${executable}
 	"${PROJECT_SOURCE_DIR}/src"
 )
 target_link_libraries(${executable} lbsolver io ${MPI_LIBRARIES})
+#target_link_libraries(${executable} lbsolver io)
 
 install(
 	TARGETS ${executable}

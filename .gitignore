@@ -35,6 +35,9 @@
 # Temporary files
 *~
 
+# VIM
+*.swp
+
 # Not including builds, libraries and binaries
 build/*
 lib/*
